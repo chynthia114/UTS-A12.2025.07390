@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Svarna Studio - Premium Florist</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- 1. NAVBAR -->
+    <header>
+        <nav class="navbar">
+            <div class="logo">Svarna Studio</div>
+            <ul class="nav-links">
+                <li><a href="#home">FLOWERS</a></li>
+                <li><a href="#collections">SHOP</a></li>
+                <li><a href="#about">ABOUT US</a></li>
+            </ul>
+            <div class="nav-right">
+                <div class="cart-icon" id="btn-keranjang">
+                    🛒 Cart [<span id="cart-count">0</span>]
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <!-- 2. SPLIT HERO SECTION -->
+        <section class="hero-split" id="home">
+            
+            <!-- Bagian Kiri: Teks -->
+            <div class="hero-text-box">
+                <h1 class="hero-title">ELEGANT.<br>TIMELESS.<br>BEAUTIFUL.</h1>
+                <p class="hero-desc">Rangkaian bunga eksklusif yang didesain sepenuh hati untuk merayakan setiap momen paling berharga dalam hidupmu.</p>
+                <a href="#collections" class="btn-solid">SHOP FLOWERS &rarr;</a>
+            </div>
+
+            <!-- Bagian Kanan: Gambar -->
+            <div class="hero-visual">
+                <div class="hero-image-placeholder">
+                    <!-- Ganti .jpg menjadi .jfif atau .png sesuai format asli gambarmu -->
+                    <img src="assets/images/svarna studio.jfif" alt="Svarna Studio Hero">
+                </div>
+            </div>
+
+        </section>
+
+        <!-- 3. FEATURES BAR (Informasi Layanan) -->
+        <section class="features-bar">
+            <div class="feature-item">
+                <span class="feature-icon">🚚</span>
+                <div>
+                    <h4>SAME DAY DELIVERY</h4>
+                    <p>Order before 2:00 PM</p>
+                </div>
+            </div>
+            <div class="feature-item">
+                <span class="feature-icon">🌿</span>
+                <div>
+                    <h4>FRESH FROM FARM</h4>
+                    <p>Handpicked with care</p>
+                </div>
+            </div>
+            <div class="feature-item">
+                <span class="feature-icon">✨</span>
+                <div>
+                    <h4>EXPERT FLORISTS</h4>
+                    <p>Crafted by professionals</p>
+                </div>
+            </div>
+            <div class="feature-item">
+                <span class="feature-icon">❤️</span>
+                <div>
+                    <h4>100% GUARANTEE</h4>
+                    <p>Your satisfaction, always</p>
+                </div>
+            </div>
+        </section>
+
+       <!-- 4. KATALOG HEADER & GRID -->
+<div class="search-container">
+    <input type="text" id="search-input" class="search-input" placeholder="🔍 Cari koleksi bunga...">
+</div>
+<section class="katalog-section" id="collections">
+    <div class="katalog-header">
+        <h2>FRESH BLOOMS</h2>
+        <a href="#" class="view-all">VIEW ALL &rarr;</a>
+    </div>
+    
+    <!-- HANYA ADA SATU PEMBUKA GRID DI SINI -->
+    <div class="katalog-grid">
+        
+        <!-- Card 1 -->
+        <article class="card" data-kategori="fresh">
+            <div class="img-placeholder">
+                <img src="assets/images/velvet noir.jfif" alt="Noir Velvet">
+            </div>
+            <div class="card-body">
+                <div class="card-info">
+                    <h3 class="card-title">Noir Velvet</h3>
+                    <p class="card-harga">Rp 350.000</p>
+                </div>
+                <button class="btn-pesan" data-id="1" data-nama="Noir Velvet" data-harga="300000">&rarr;</button>
+            </div>
+        </article>
+
+        <!-- Card 2 -->
+        <article class="card" data-kategori="fresh">
+            <div class="img-placeholder">
+                <img src="assets/images/velvet blush.jfif" alt="Velvet Blush">
+            </div>
+            <div class="card-body">
+                <div class="card-info">
+                    <h3 class="card-title">Velvet Blush</h3>
+                    <p class="card-harga">Rp 250.000</p>
+                </div>
+                <button class="btn-pesan" data-id="2" data-nama="Velvet Blush" data-harga="250000">&rarr;</button>
+            </div>
+        </article>
+
+        <!-- Card 3 -->
+        <article class="card" data-kategori="fresh">
+            <div class="img-placeholder">
+                <img src="assets/images/golden reverie.jfif" alt="Golden Reverie">
+            </div>
+            <div class="card-body">
+                <div class="card-info">
+                    <h3 class="card-title">Golden Reverie</h3>
+                    <p class="card-harga">Rp 20.000</p>
+                </div>
+                <button class="btn-pesan" data-id="3" data-nama="Golden Reverie" data-harga="20000">&rarr;</button>
+            </div>
+        </article>
+
+        <!-- Card 4 -->
+        <article class="card" data-kategori="fresh">
+            <div class="img-placeholder">
+                <img src="assets/images/light nightmare.jfif" alt="Light Nightmare">
+            </div>
+            <div class="card-body">
+                <div class="card-info">
+                    <h3 class="card-title">Light Nightmare</h3>
+                    <p class="card-harga">Rp 400.000</p>
+                </div>
+                <button class="btn-pesan" data-id="4" data-nama="Light Nightmare" data-harga="400000">&rarr;</button>
+            </div>
+        </article>
+
+    </div>
+    <!-- HANYA ADA SATU PENUTUP GRID DI SINI -->
+
+</section>
+
+    <!-- 5. STORY BANNER (Kombinasi Teks & Gambar) -->
+    <section class="story-banner" id="about">
+        <div class="story-text">
+            <h2>FLOWERS THAT TELL<br>BEAUTIFUL STORIES</h2>
+            <p>We source the finest blooms and design with heart to bring beauty, joy, and meaning to every moment.</p>
+            <a href="#" class="btn-outline">OUR STORY &rarr;</a>
+        </div> <!-- INI TAG PENUTUP YANG HILANG -->
+
+        <div class="story-image">
+            <div class="img-placeholder-large">
+                <img src="assets/images/workshp.jfif" alt="Svarna Workshop">
+            </div>
+        </div>
+</section>
+     <!-- 4. KATALOG HEADER & GRID -->
+        <div class="search-container"> 
+             <input type="text" id="search-input" class="search-input" placeholder="🔍 Cari koleksi bunga...">
+        </div>
+        <section class="katalog-section" id="collections">
+            <div class="katalog-header">
+                <h2>FRESH BLOOMS</h2>
+                <a href="#" class="view-all">VIEW ALL &rarr;</a>
+            </div>
+            
+            <!-- HANYA ADA SATU PEMBUKA GRID DI SINI -->
+            <div class="katalog-grid">
+                
+                <!-- Card 1 -->
+                <article class="card" data-kategori="fresh">
+                    <div class="img-placeholder">
+                        <img src="assets/images/silkrose.jfif" alt="Ethereal Silk Rose">
+                    </div>
+                    <div class="card-body">
+                        <div class="card-info">
+                            <h3 class="card-title">Ethereal Silk Rose</h3>
+                            <p class="card-harga">Rp 300.000</p>
+                        </div>
+                        <button class="btn-pesan" data-id="1" data-nama="Ethereal Silk Rose" data-harga="300000">&rarr;</button>
+                    </div>
+                </article>
+
+                <!-- Card 2 -->
+                <article class="card" data-kategori="fresh">
+                    <div class="img-placeholder">
+                        <img src="assets/images/peony.jfif" alt="Timeless Ivory Peony">
+                    </div>
+                    <div class="card-body">
+                        <div class="card-info">
+                            <h3 class="card-title">Timeless Ivory Peony</h3>
+                            <p class="card-harga">Rp280.000</p>
+                        </div>
+                        <button class="btn-pesan" data-id="2" data-nama="Timeless Ivory Peony" data-harga="280000">&rarr;</button>
+                    </div>
+                </article>
+
+                <!-- Card 3 -->
+                <article class="card" data-kategori="fresh">
+                    <div class="img-placeholder">
+                        <img src="assets/images/orchid.jfif" alt="Velvet Midnight Orchid">
+                    </div>
+                    <div class="card-body">
+                        <div class="card-info">
+                            <h3 class="card-title">Velvet Midnight Orchid</h3>
+                            <p class="card-harga">Rp 380.000</p>
+                        </div>
+                        <button class="btn-pesan" data-id="3" data-nama="Velvet Midnight Orchid" data-harga="380000">&rarr;</button>
+                    </div>
+                </article>
+
+                <!-- Card 4 -->
+                <article class="card" data-kategori="fresh">
+                    <div class="img-placeholder">
+                        <img src="assets/images/lily.jfif" alt="LGilded Porcelain Lily">
+                    </div>
+                    <div class="card-body">
+                        <div class="card-info">
+                            <h3 class="card-title">Gilded Porcelain Lily</h3>
+                            <p class="card-harga">Rp 380.000</p>
+                        </div>
+                        <button class="btn-pesan" data-id="4" data-nama="Gilded Porcelain Lily" data-harga="380000">&rarr;</button>
+                    </div>
+                </article>
+            </div>
+        </section>
+    </main>
+
+    <!-- 6. MODAL KERANJANG -->
+    <div id="modal-keranjang" class="modal-overlay hidden">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2>Your Cart</h2>
+                <button id="btn-tutup" class="btn-close">&times;</button>
+            </div>
+            <div class="modal-body" id="daftar-pesanan">
+                <p class="empty-cart">Cart is empty.</p>
+            </div>
+            <div class="modal-footer">
+                <h3>Total: <span id="total-harga">Rp 0</span></h3>
+                <button id="btn-checkout" class="btn-checkout">Checkout</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- 7. FOOTER / NEWSLETTER -->
+    <footer class="site-footer">
+        <div class="newsletter-bar">
+            <div class="news-text">
+                <h3>10% OFF YOUR FIRST ORDER</h3>
+                <p>Join our community and enjoy your first order.</p>
+            </div>
+            <div class="news-form-container">
+            <div class="news-form">
+                <input type="email" id="email-input" placeholder="Enter your email address">
+                <button class="btn-subscribe" id="btn-subscribe">SUBSCRIBE</button>
+            </div>
+    <p id="subscribe-msg"></p>
+</div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 Svarna Studio. Semarang.</p>
+        </div>
+    </footer>
+    <!-- 8. TOAST NOTIFICATION CONTAINER -->
+    <div id="toast-container"></div>
+    <script src="script.js"></script>
+</body>
+</html>
