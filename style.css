@@ -128,8 +128,17 @@ header { background-color: var(--bg-main); position: sticky; top: 0; z-index: 10
     transform: translateY(-5px) scale(1.02); 
 }
 .card-body { display: flex; justify-content: space-between; align-items: flex-end; }
-.card-title { font-size: 1.2rem; margin-bottom: 0.3rem; }
-.card-harga { font-size: 0.9rem; opacity: 0.8; font-family: 'Helvetica Neue', sans-serif;}
+.card-title { 
+    font-size: 1.2rem; 
+    margin-bottom: 0.3rem; 
+    color: var(--text-light) !important; 
+}
+.card-harga { 
+    font-size: 0.9rem; 
+    opacity: 0.8; 
+    font-family: 'Helvetica Neue', sans-serif;
+    color: var(--text-light) !important; 
+}
 .btn-pesan { background: none; border: none; color: var(--text-light); font-size: 1.2rem; cursor: pointer; transition: 0.3s; }
 .btn-pesan:hover { color: var(--accent); transform: translateX(5px); }
 
@@ -234,4 +243,36 @@ header { background-color: var(--bg-main); position: sticky; top: 0; z-index: 10
 @keyframes fadeOutRight {
     from { transform: translateX(0); opacity: 1; }
     to { transform: translateX(100%); opacity: 0; }
+}
+/* --- KUSTOMISASI FORM BOOTSTRAP --- */
+/* Teks judul dan label tetap putih */
+#formulir h3, 
+#formulir .form-label, 
+#formulir .form-check-label {
+    color: #fdfbf7 !important;
+    font-family:'Georgia', 'Times New Roman', serif;
+}
+
+/* Mengembalikan kotak input menjadi transparan */
+#formulir .form-control, 
+#formulir .form-select {
+    background-color: transparent !important;
+    border: 1px solid rgba(255, 255, 255, 0.4) !important;
+    color: #fdfbf7 !important;
+    border-radius: 4px;
+}
+
+/* Efek saat kotak input diklik/aktif */
+#formulir .form-control:focus, 
+#formulir .form-select:focus {
+    background-color: rgba(255, 255, 255, 0.05) !important;
+    border-color: #fdfbf7 !important;
+    color: #fdfbf7 !important;
+    box-shadow: none !important;
+}
+
+/* Warna latar untuk pilihan dropdown kota */
+#formulir option {
+    background-color: #3b0918 !important;
+    color: #fdfbf7 !important;
 }
